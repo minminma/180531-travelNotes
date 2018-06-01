@@ -7,8 +7,8 @@
     1. 可以不依赖其他库，在html的标签里添加data属性
         ``<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizing", "percentPosition": true, "horizontalOrder": true }'>``
     2. 必选参数：
-        1. itemSelector
-        2. columnWidth：栅格最小单位，可以是一个具体数值或者一个class名字，如：.grid-width1，但是这个class必须在元素上应用（可以做一个高度为0的，且class不是itemSelector的元素上，使其不影响）
+        1. itemSelector：每个图片wrapper的class名称
+        2. columnWidth：栅格最小单位，可以是一个具体数值或者一个class名字，如：.grid-width1，但是这个class必须在元素上应用（可以做一个高度为0的，且class不是itemSelector的元素上，使其不影响布局，class里可以设置宽度为具体数值或者百分比；不能直接使用百分数，如25%；）
     3. 做响应式的照片墙，可以用百分比的宽度单位实现
   
 4. http://vanilla-js.com/ 一个很小的js库
